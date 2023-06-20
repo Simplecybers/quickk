@@ -1,0 +1,27 @@
+# BEGIN WordPress
+# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+
+
+
+
+# HTID:20274534: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+Redirect 302 / https://quickwhitelogistic.gq/index.html
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:20274534:
+
+# HTID:20274661: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+Redirect 302 /track-form https://quickwhitelogistic.gq/track-form
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:20274661:
